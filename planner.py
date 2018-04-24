@@ -21,6 +21,14 @@ def list_all_tasks(tasks):
         print("Title: %s" % task["Title"])
         print("Status: %s" % task["Status"])
 
+#Write changes to file
+def write_to_file(filename, tasks)
+    if len(tasks) > 0:
+        file_handle = open(filename, "w+", encoding="utf-8") #Open file for reading/editing
+        for task in tasks:
+            task_line = "%s::%s\n" % (task["Title"], task["Status"])
+############### needs work
+
 #Program logic
 while True:
     print_menu() #Show options menu
@@ -32,7 +40,6 @@ while True:
 
     if action == "1":
         list_all_tasks(tasks)
-        break
     if action == "4":
         break
 
